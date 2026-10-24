@@ -15,6 +15,9 @@
   - `df -h .`
   - `du -sh .`
   - `python` SHA256 manifest generation
-  - `git diff --check` (to be run before commit)
+  - `git --no-pager diff --check`
 - Current risk: the large `runs/` directories are git-ignored and are not suitable for direct repository push without a durable artifact store or Git LFS configuration.
-- Commit SHA: pending local commit and push verification.
+- Local commit SHA: `d64759b`
+- Commit title: `Archive AWAKE paper evidence and reviewer remediation`
+- Push status: `git push origin HEAD` failed with `fatal: unable to get password from user` because credentials were not available in this environment.
+- Final status: the archival commit exists locally, the evidence archive is preserved, and the push remains blocked by authentication.
