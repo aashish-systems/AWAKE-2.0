@@ -42,7 +42,7 @@
 - setup slack: -1.6932535852710704 ns
 - setup TNS: -11.565447593641487 ns
 - setup violation count: 29
-- total power: 0.013314031064510345 mW
+- total power: 13.314031064510345 mW (raw `power__total` 0.013314031064510345 W)
 - antenna violating nets: 4
 - core area: 177839 µm²
 - instance area: 71217.1 µm²
@@ -53,11 +53,13 @@
 - setup slack: 0.6247749161531793 ns
 - setup TNS: 0 ns
 - setup violation count: 0
-- total power: 0.012208886444568634 mW
+- total power: 12.208886444568634 mW (raw `power__total` 0.012208886444568634 W)
 - antenna violating nets: 11
 - core area: 180158 µm²
 - instance area: 71996.6 µm²
 - utilization: 0.399631
 
 
-The machine-readable manifest is at [artifact_manifest.csv](artifact_manifest.csv).
+The detailed signoff reconciliation with exact raw evidence paths is at
+[signoff_claim_matrix.md](signoff_claim_matrix.md). The machine-readable
+manifest is at [artifact_manifest.csv](artifact_manifest.csv).

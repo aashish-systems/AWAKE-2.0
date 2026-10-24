@@ -15,4 +15,4 @@ openlane: command not found
 
 ## Notes
 - OpenLane is not installed in the current execution environment (`openlane: command not found`), so the run directories are treated as preserved raw evidence rather than live reproductions.
-- The repository's `flow/config.json` indicates a 20 ns clock period and 40% core utilization placeholder configuration, which should be treated as an implementation input, not a validated design requirement.
+- The preserved completed runs' `resolved.json` files and final SDCs record a 20 ns clock period. The current working-tree `flow/config.json` is modified and is not used as historical run evidence. Treat the clock period and utilization setting as flow inputs, not as validated design requirements.

@@ -21,3 +21,11 @@
 - Commit title: `Archive AWAKE paper evidence and reviewer remediation`
 - Push status: `git push origin HEAD` failed with `fatal: unable to get password from user` because credentials were not available in this environment.
 - Final status: the archival commit exists locally, the evidence archive is preserved, and the push remains blocked by authentication.
+
+## First evidence audit and signoff reconciliation
+- Date: 2026-10-24
+- Scope: read-only verification of preserved local run configuration, SDC, timing, power, DRC, antenna, LVS, and final metrics.
+- No RTL, flow configuration, or run-directory files were modified; no flow was rerun.
+- Deliverable: [signoff_claim_matrix.md](signoff_claim_matrix.md), with exact repository-relative evidence paths and run-by-run conclusions.
+- Reconciliation: both completed physical runs use a 20 ns clock; the 8.615 ns figure is a STA path data-arrival value. Both have zero route/Magic/KLayout DRC and unique LVS matches, but final antenna counts remain 4 and 11.
+- The earliest preserved run is synthesis-only and is not physical signoff evidence.

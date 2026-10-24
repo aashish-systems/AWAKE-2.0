@@ -1,0 +1,3 @@
+run_id,metric,metric_value,evidence_path,status
+"RUN_2026-10-24_17-54-09","power__total","0.013314031064510345","runs/RUN_2026-10-24_17-54-09/final/metrics.json","Aggregate reported power in watts; not state-specific"
+"RUN_2026-10-24_19-16-36","power__total","0.012208886444568634","runs/RUN_2026-10-24_19-16-36/final/metrics.json","Aggregate reported power in watts; not state-specific"

@@ -1,0 +1,5 @@
+./build/openlane/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/combined/test/baseline_results.txt
+./build/openlane/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130B/libs.tech/combined/test/baseline_results.txt
+./docs/evidence_archive/full_validation_20261024_204134/baseline_candidates.txt
+./docs/evidence_archive/full_validation_20261024_204134/baseline_evidence_inventory.csv
+./sim/traces/baseline_diurnal.csv
