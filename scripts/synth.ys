@@ -1,0 +1,13 @@
+# Generic (technology-independent) Yosys synthesis of the full hierarchy.
+# Run from repo root: yosys -q -s scripts/synth.ys
+read_verilog -I rtl/common rtl/common/synchronizer.v rtl/common/isolation_cell.v rtl/common/sample_bus_pipeline.v rtl/common/register_file.v rtl/common/reg_bus_interconnect.v rtl/csa/weighted_sum.v rtl/csa/normalization_unit.v rtl/csa/crop_stress_accelerator.v rtl/decde/ema_filter.v rtl/decde/crossover_detector.v rtl/decde/decde_channel.v rtl/decde/fusion_unit.v rtl/dt/decision_tree_accelerator.v rtl/ipm/ipm_fsm.v rtl/ipm/power_controller.v rtl/ipm/wake_controller.v rtl/sa_adc/sa_adc_controller.v rtl/top/agrisense_ipms_top.v
+hierarchy -check -top agrisense_ipms_top
+proc
+check -assert
+opt
+select -assert-none t:$dlatch t:$adlatch t:$dlatchsr
+synth -top agrisense_ipms_top -flatten
+check -assert -noinit
+select -assert-none t:$_DLATCH_*
+tee -o build/synth/stat.txt stat
+write_verilog -noattr build/synth/agrisense_ipms_top_generic.v
