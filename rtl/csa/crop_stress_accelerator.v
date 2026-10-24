@@ -57,9 +57,17 @@ module crop_stress_accelerator(
         .product(p_light)
     );
 
-    // Combinational sum of weighted products
+    // Balanced combinational sum of weighted products.
+    // Explicit widths preserve the full unsigned sum of five 16-bit products.
+    wire [16:0] weighted_pair_01;
+    wire [16:0] weighted_pair_23;
+    wire [17:0] weighted_pair_0123;
     wire [18:0] weighted_sum_val_comb;
-    assign weighted_sum_val_comb = {3'b0, p_moisture} + {3'b0, p_leaftemp} + {3'b0, p_humidity} + {3'b0, p_airtemp} + {3'b0, p_light};
+
+    assign weighted_pair_01   = {1'b0, p_moisture} + {1'b0, p_leaftemp};
+    assign weighted_pair_23   = {1'b0, p_humidity} + {1'b0, p_airtemp};
+    assign weighted_pair_0123 = {1'b0, weighted_pair_01} + {1'b0, weighted_pair_23};
+    assign weighted_sum_val_comb = {1'b0, weighted_pair_0123} + {3'b0, p_light};
 
     // One-cycle pipeline register to break the adder-tree critical path
     reg [18:0] weighted_sum_val_reg;

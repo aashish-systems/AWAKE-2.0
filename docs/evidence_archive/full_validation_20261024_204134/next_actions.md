@@ -20,11 +20,23 @@
 - [ ] Validate functional comparability.
 - [ ] Report absolute power/energy and percentage changes.
 
+Phase 3 audit: blocked. No comparable baseline implementation or matched
+full-design activity exists in the preserved archive; see
+`docs/power_characterization/phase3_baseline_report.md`. Do not calculate
+baseline deltas from the two event-driven runs.
+
 ## Gate 4 — Figures
 - [ ] Map each figure to source data, run ID, and flow stage.
 - [ ] Regenerate figures only from verified data.
 - [ ] Replace placeholder and unsupported captions.
 - [ ] Record missing provenance.
+
+Phase 4 audit: blocked pending the authoritative manuscript and figure source.
+The inventoried 270 PNG/SVG candidates are Sky130/Volare library collateral;
+no project-owned manuscript or rendered paper figure was found. Physical-run
+ODB/DEF/CTS/route/STA/GDS evidence is enumerated in
+`docs/evidence_archive/phase4_figure_audit.md`. No figure or preserved run
+artifact was modified.
 
 ## Gate 5 — Paper
 - [ ] Find the actual manuscript source and available reviewer feedback.

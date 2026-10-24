@@ -7,9 +7,9 @@ The repository snapshot does not include original reviewer files. This tracker r
 |---|---|---|---|---|---|
 | 1 | Per-state power characterization | per-state power numbers and state description | `docs/power_domains.md`, `final/metrics.json` | not found | add a per-state power table to the paper and archive |
 | 2 | Duty-cycle weighted power estimate | occupancy distribution and weighted estimates | no direct artifact found | not found | calculate from trace data and document assumptions |
-| 3 | Fair baseline comparison | same-flow baseline run | `flow/config.json` and raw metrics JSON | partial | document baseline criteria and comparison run |
-| 4 | Placeholder wording in figure captions | paper figure source and captions | no paper source in repository | not found | replace placeholders in source documents |
-| 5 | Figure artifact validation | real placement/CTS/routing images or sources | run logs only | partial | verify and archive all figure sources |
+| 3 | Fair baseline comparison | functionally comparable, same-flow baseline run with matched activity | No always-on design/run or matched full-design activity found; see `docs/power_characterization/phase3_baseline_report.md` | blocked | Define the always-on behavior, then produce and validate a paired same-flow run |
+| 4 | Placeholder wording in figure captions | paper figure source and captions | No manuscript or caption source found; see `docs/evidence_archive/phase4_figure_audit.md` | blocked | Obtain the authoritative manuscript and caption source, then review unsupported claims |
+| 5 | Figure artifact validation | traceable placement/CTS/routing artifacts and rendered figure source | Stage ODB/DEF/CTS/route/STA/GDS artifacts exist for both completed runs; no project-owned rendered figures; see `docs/evidence_archive/phase4_figure_audit.md` | partial | Obtain the manuscript/figure source and map each figure to its run and stage evidence |
 | 6 | Sensor input abstraction | clear pre-digitized sensor contract | `README.md` and `docs/architecture.md` | partial | add explicit statement in manuscript |
 | 7 | LoRa TX abstraction | scope statement | explicit README limitation table | verified | preserve the limitation statement |
 | 8 | 2 KB history SRAM status | implementation status | `README.md` out-of-scope statement | partial | define future-work vs placeholder status |

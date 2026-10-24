@@ -1,0 +1,5 @@
+state,power_total_W,power_internal_W,power_switching_W,power_leakage_W,power_clock_W,corner,activity_source,measurement_window,status,confidence,limitations
+SLEEP,NA,NA,NA,NA,NA,NA,NA,NA,unavailable,none,"No state-annotated whole-design activity or state-specific power report; FSM-only simulation is not a power model."
+MONITOR,NA,NA,NA,NA,NA,NA,NA,NA,unavailable,none,"No state-annotated whole-design activity or state-specific power report; FSM-only simulation is not a power model."
+WARNING,NA,NA,NA,NA,NA,NA,NA,NA,unavailable,none,"No state-annotated whole-design activity or state-specific power report; FSM-only simulation is not a power model."
+CRITICAL,NA,NA,NA,NA,NA,NA,NA,NA,unavailable,none,"No state-annotated whole-design activity or state-specific power report; FSM-only simulation is not a power model."

@@ -1,0 +1,5 @@
+state,transition_entries,reset_cycles_excluded,operating_cycles_including_transitions,steady_phase_cycles,transition_phase_cycles,operating_occupancy_fraction,simulated_occupancy_ns_at_20ns_period,state_outputs,power_status,energy_status
+SLEEP,0,2,12,12,0,0.14814815,240,0|0|0|0|0|0|0,unavailable,unavailable
+MONITOR,2,0,32,30,2,0.39506173,640,1|1|0|0|0|0|0,unavailable,unavailable
+WARNING,2,0,21,19,2,0.25925926,420,1|1|1|1|1|0|0,unavailable,unavailable
+CRITICAL,1,0,16,15,1,0.19753086,320,1|1|1|1|1|1|1,unavailable,unavailable

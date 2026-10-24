@@ -1,0 +1,5 @@
+state,transition_entries,operating_cycles_including_transitions,occupancy_fraction,simulated_duration_ns_at_20ns_period,power_W,energy_J,status,confidence,limitations
+SLEEP,0,12,0.14814815,240,NA,NA,unavailable,high_for_this_directed_trace_only,"Simulated directed FSM occupancy; no state-specific power model, therefore energy is unavailable."
+MONITOR,2,32,0.39506173,640,NA,NA,unavailable,high_for_this_directed_trace_only,"Simulated directed FSM occupancy; no state-specific power model, therefore energy is unavailable."
+WARNING,2,21,0.25925926,420,NA,NA,unavailable,high_for_this_directed_trace_only,"Simulated directed FSM occupancy; no state-specific power model, therefore energy is unavailable."
+CRITICAL,1,16,0.19753086,320,NA,NA,unavailable,high_for_this_directed_trace_only,"Simulated directed FSM occupancy; no state-specific power model, therefore energy is unavailable."
