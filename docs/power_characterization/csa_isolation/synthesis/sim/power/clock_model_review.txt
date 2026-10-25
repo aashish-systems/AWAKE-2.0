@@ -1,0 +1,78 @@
+=== OPENROAD BUILD ===
+unknown
+
+=== FLIP-FLOP CLOCK POWER TABLE ===
+    cell ("sky130_fd_sc_hd__dfrtp_1") {
+        leakage_power () {
+            value : 0.0154627000;
+            when : "RESET_B&CLK&D&!Q";
+        }
+        leakage_power () {
+            value : 0.0141340000;
+            when : "RESET_B&!CLK&!D&!Q";
+        }
+        leakage_power () {
+            value : 0.0136124000;
+            when : "!RESET_B&CLK&!D&!Q";
+        }
+        leakage_power () {
+            value : 0.0065133000;
+            when : "RESET_B&CLK&!D&Q";
+        }
+        leakage_power () {
+            value : 0.0057154000;
+            when : "RESET_B&!CLK&D&Q";
+        }
+        leakage_power () {
+            value : 0.0146646000;
+            when : "!RESET_B&CLK&D&!Q";
+        }
+        leakage_power () {
+            value : 0.0142499000;
+            when : "RESET_B&!CLK&D&!Q";
+        }
+        leakage_power () {
+            value : 0.0144105000;
+            when : "RESET_B&CLK&!D&!Q";
+        }
+        leakage_power () {
+            value : 0.0137594000;
+            when : "!RESET_B&!CLK&!D&!Q";
+        }
+        leakage_power () {
+            value : 0.0059648000;
+            when : "RESET_B&CLK&D&Q";
+        }
+        leakage_power () {
+            value : 0.0072568000;
+            when : "RESET_B&!CLK&!D&Q";
+        }
+        leakage_power () {
+            value : 0.0140834000;
+            when : "!RESET_B&!CLK&D&!Q";
+        }
+        area : 25.024000000;
+        cell_footprint : "sky130_fd_sc_hd__dfrtp";
+        cell_leakage_power : 0.0116522800;
+        driver_waveform_fall : "ramp";
+        driver_waveform_rise : "ramp";
+        ff ("IQ","IQ_N") {
+            clear : "!RESET_B";
+            clocked_on : "CLK";
+            next_state : "D";
+        }
+        pg_pin ("VGND") {
+
+=== EXISTING POWER SUMMARY ===
+Annotated 5922 pin activities.
+Group                       Internal       Switching         Leakage           Total
+Sequential           4.950922448e-05 0.000000000e+00 3.425340012e-10 4.950956645e-05   7.9%
+Combinational        3.160024353e-04 2.588325005e-04 5.244565671e-09 5.748401745e-04  92.1%
+Clock                0.000000000e+00 0.000000000e+00 0.000000000e+00 0.000000000e+00   0.0%
+Total                3.655115725e-04 2.588325005e-04 5.587097007e-09 6.243496900e-04 100.0%
+
+=== MATCHED ARTIFACT HASHES ===
+e0768cd0de21cb4fe2f5f5787fc0c95539a3136f6e564d81bc88bb330d9f2e63  docs/power_characterization/csa_isolation/synthesis/baseline_sky130.v
+436ef2339c5aa1cfae2965f47af5b25eed961e6caeea4f6e632081486c7f60d1  docs/power_characterization/csa_isolation/synthesis/isolated_sky130.v
+6beeef7b4e7754465ebdf31bd429a881432cf21418fdeea5825ea9316d781df1  docs/power_characterization/csa_isolation/synthesis/sim/matched_gatelevel.vcd
+5a5d5618f1776dab29c38494518cacff9601822392c530fe2d4e0434b9a1b3fc  rtl/csa/crop_stress_accelerator.v

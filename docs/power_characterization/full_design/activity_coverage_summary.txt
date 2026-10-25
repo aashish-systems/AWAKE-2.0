@@ -1,0 +1,6 @@
+AWAKE activity annotation audit
+Annotated pin activities: 97
+Unannotated activities: 26298
+Annotated fraction of reported activities: 0.3675%
+Power report total (W): 7.40e-03
+Interpretation: incomplete annotation; do not claim validated total power or power reduction.

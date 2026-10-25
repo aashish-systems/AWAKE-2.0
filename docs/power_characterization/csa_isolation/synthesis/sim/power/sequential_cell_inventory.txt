@@ -1,0 +1,12 @@
+
+baseline_sky130.v
+  sky130_fd_sc_hd__dfrtp_1: 24
+  Direct .CLK(clk) connections: 24
+  Total detected Sky130 cell types: 46
+  Total detected Sky130 instances: 1612
+
+isolated_sky130.v
+  sky130_fd_sc_hd__dfrtp_1: 24
+  Direct .CLK(clk) connections: 24
+  Total detected Sky130 cell types: 47
+  Total detected Sky130 instances: 1702

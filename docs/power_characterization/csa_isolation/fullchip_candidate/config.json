@@ -1,0 +1,31 @@
+{
+  "DESIGN_NAME": "agrisense_ipms_top_isolated",
+  "VERILOG_FILES": [
+    "/workspaces/AWAKE-2.0/rtl/common/isolation_cell.v",
+    "/workspaces/AWAKE-2.0/rtl/common/reg_bus_interconnect.v",
+    "/workspaces/AWAKE-2.0/rtl/common/register_file.v",
+    "/workspaces/AWAKE-2.0/rtl/common/sample_bus_pipeline.v",
+    "/workspaces/AWAKE-2.0/rtl/common/synchronizer.v",
+    "/workspaces/AWAKE-2.0/rtl/csa/crop_stress_accelerator.v",
+    "/workspaces/AWAKE-2.0/rtl/csa/normalization_unit.v",
+    "/workspaces/AWAKE-2.0/rtl/csa/weighted_sum.v",
+    "/workspaces/AWAKE-2.0/rtl/decde/crossover_detector.v",
+    "/workspaces/AWAKE-2.0/rtl/decde/decde_channel.v",
+    "/workspaces/AWAKE-2.0/rtl/decde/ema_filter.v",
+    "/workspaces/AWAKE-2.0/rtl/decde/fusion_unit.v",
+    "/workspaces/AWAKE-2.0/rtl/dt/decision_tree_accelerator.v",
+    "/workspaces/AWAKE-2.0/rtl/ipm/ipm_fsm.v",
+    "/workspaces/AWAKE-2.0/rtl/ipm/power_controller.v",
+    "/workspaces/AWAKE-2.0/rtl/ipm/wake_controller.v",
+    "/workspaces/AWAKE-2.0/rtl/sa_adc/sa_adc_controller.v",
+    "/workspaces/AWAKE-2.0/docs/power_characterization/csa_isolation/fullchip_candidate/agrisense_ipms_top_isolated.v",
+    "/workspaces/AWAKE-2.0/docs/power_characterization/csa_isolation/csa_isolated_wrapper.v"
+  ],
+  "VERILOG_INCLUDE_DIRS": [
+    "/workspaces/AWAKE-2.0/rtl/common"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20.0,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 50
+}

@@ -1,0 +1,7 @@
+design,phase,known_bit_transitions,identifier_change_events,sum_of_widths_for_changed_events
+baseline,enabled,500415,485075,520495
+baseline,disabled,386216,374219,402750
+baseline,unknown,0,0,0
+isolated,enabled,445419,437296,456077
+isolated,disabled,71933,65612,80737
+isolated,unknown,0,0,0

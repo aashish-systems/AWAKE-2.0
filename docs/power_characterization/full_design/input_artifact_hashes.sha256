@@ -1,0 +1,3 @@
+48c8d2726ed96f305612af6320ddcdf0fcfee0f6aba2505721170ea4f9ada139  build/power_characterization/full_design/awake_top_workload.vcd
+6e1b18707937dddcd1e534575fbe3f212727fcfbd404db001587c1dd362d854f  runs/RUN_2026-10-24_19-16-36/final/odb/agrisense_ipms_top.odb
+4bcfb7ee84f49491bbb72063192899922f0ab9e520c0176c92732bdb37e77ae0  runs/RUN_2026-10-24_19-16-36/final/spef/nom/agrisense_ipms_top.nom.spef
