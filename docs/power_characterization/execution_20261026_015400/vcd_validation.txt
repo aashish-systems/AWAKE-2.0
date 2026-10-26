@@ -1,0 +1,13 @@
+VCD: docs/power_characterization/full_design/gatelevel_workload.vcd
+VCD scope used for gate-level pin annotation: tb_gatelevel_vcd/uut
+Timescale: (1, 'ps')
+Last timestamp: 2840000 (timescale units)
+Clock rising edges: 142
+Unique rising-edge intervals (ps): [20000]
+Windows: every state and enable signal was checked for constancy over [start,end).
+SLEEP_STABLE: 125000-165000 ps state=00 d2=0 d3=0 comm=0 validation=PASS
+MONITOR_STABLE: 225000-285000 ps state=01 d2=0 d3=0 comm=0 validation=PASS
+MONITOR_PRIMED: 1405000-1545000 ps state=01 d2=0 d3=0 comm=0 validation=PASS
+CRITICAL: 1945000-2105000 ps state=11 d2=1 d3=1 comm=1 validation=PASS
+WARNING: 2185000-2445000 ps state=10 d2=1 d3=0 comm=0 validation=PASS
+MONITOR_RECOVERY: 2565000-2705000 ps state=01 d2=0 d3=0 comm=0 validation=PASS

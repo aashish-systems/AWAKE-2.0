@@ -1,0 +1,4 @@
+State window: SLEEP_STABLE, 125000-165000 ps
+First run (internal, switching, leakage, total W): (0.002080858685076, 0.0007465489325114, 4.964518041106e-08, 0.002827457152307)
+Repeat (internal, switching, leakage, total W): (0.002080858685076, 0.0007465489325114, 4.964518041106e-08, 0.002827457152307)
+Exact repeat match: True
